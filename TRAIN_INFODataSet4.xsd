@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TRAIN_INFODataSet4" targetNamespace="http://tempuri.org/TRAIN_INFODataSet4.xsd" xmlns:mstns="http://tempuri.org/TRAIN_INFODataSet4.xsd" xmlns="http://tempuri.org/TRAIN_INFODataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TRAIN_INFOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TRAIN_INFOConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Online_Ticket_Reservation.Properties.Settings.GlobalReference.Default.TRAIN_INFOConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TRAINSTableAdapter" GeneratorDataComponentClassName="TRAINSTableAdapter" Name="TRAINS" UserDataComponentName="TRAINSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TRAIN_INFOConnectionString (Settings)" DbObjectName="TRAIN_INFO.dbo.TRAINS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DESTINATION FROM dbo.TRAINS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DESTINATION" DataSetColumn="DESTINATION" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TRAIN_INFODataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TRAIN_INFODataSet4" msprop:Generator_UserDSName="TRAIN_INFODataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRAINS" msprop:Generator_TableClassName="TRAINSDataTable" msprop:Generator_TableVarName="tableTRAINS" msprop:Generator_TablePropName="TRAINS" msprop:Generator_RowDeletingName="TRAINSRowDeleting" msprop:Generator_RowChangingName="TRAINSRowChanging" msprop:Generator_RowEvHandlerName="TRAINSRowChangeEventHandler" msprop:Generator_RowDeletedName="TRAINSRowDeleted" msprop:Generator_UserTableName="TRAINS" msprop:Generator_RowChangedName="TRAINSRowChanged" msprop:Generator_RowEvArgName="TRAINSRowChangeEvent" msprop:Generator_RowClassName="TRAINSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DESTINATION" msprop:Generator_ColumnVarNameInTable="columnDESTINATION" msprop:Generator_ColumnPropNameInRow="DESTINATION" msprop:Generator_ColumnPropNameInTable="DESTINATIONColumn" msprop:Generator_UserColumnName="DESTINATION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
