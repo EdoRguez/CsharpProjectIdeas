@@ -18,3 +18,15 @@ This guide is for people looking to work on projects but out of ideas. You can a
 
 ### UWP
 * Build a personal finance application.
+
+## Contributing
+
+*  Create your **branch**: `git checkout -b my-new-feature`
+
+*  **Commit** your changes: `git commit -m 'Add some feature'`
+
+*  **Push** to the branch: `git push origin my-new-feature`
+
+*  Send a **Pull Request**
+
+*  **Enjoy!**
