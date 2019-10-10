@@ -19,6 +19,26 @@ This guide is for people looking to work on projects but out of ideas. You can a
 ### UWP
 * Build a personal finance application.
 
+### 17 Beginner C# Walkthrough Projects step by step
+* Learn how to code in Csharp using this [udemy](https://www.udemy.com/course/17-beginner-c-walkthrough-projects-step-by-step/) course.
+* You will build the following projects in the course:-
+    * Calculator
+    * Digital Clock
+    * Currency Converter
+    * Picture Viewer
+    * Maths Quiz
+    * Web browser
+    * Notepad, Maze Game
+    * paint drawing app
+    * Pair matching game
+    * 2D Ping Pong game
+    * snake game
+    * image upload form
+    * Mortgage calculator
+    * weight conversion app
+    * Temperature Converter
+* **This is not a free course**
+
 ## Contributing
 
 * If you are new to open source see [CONTRIBUTING.md](CONTRIBUTING.md) file.
